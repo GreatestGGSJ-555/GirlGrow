@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GIRLGROW</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+      body {
+        /* background-color: rgb(255 248 179); */
+        background-image: url(final.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      .heading1 {
+        background-color: #fbfb8f;
+        border: 4px solid hotpink;
+        height: 70px;
+        width: 500px;
+        font-size: 50px;
+        font-style: normal;
+        display: block;
+
+        /* margin: 20px 100px 20px 400px; */
+        margin: auto;
+        width: 40%;
+      }
+      .heading{
+        color: white;
+      }
+      .intro {
+        font-size: larger;
+        font-style: oblique;
+        color: white;
+
+        font-weight: bold;
+      }
+      #form1 {
+        border: 4px solid hotpink;
+        /* width: 500px; */
+        color: white;
+        display: block;
+        width: 30%;
+
+        padding: 10px 40px;
+        margin:auto;
+      }
+      .navbar {
+        border-width: 500px;
+        border-radius: 10px;
+        width: auto;
+
+        background-color:rgb(61, 59, 59);
+      }
+      .navbar ul {
+        overflow: auto;
+      }
+      .navbar li {
+        float: left;
+        list-style: none;
+        margin: 10px 18px;
+        /* padding: 3px 3px ; */
+      }
+      .navbar li a {
+        padding: 5px 5px 5px 5px;
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        font-style: normal;
+      }
+      a:hover {
+        background-color: hotpink;
+        cursor: pointer;
+        /* font-size: 15px; */
+      }
+      .search {
+        border-radius: 10px;
+        float: right;
+        color: white;
+        padding: 5px 30px 5px 5px;
+      }
+      #search {
+        border: 4px solid black;
+        border-radius: 10px;
+        padding: 5px 5px 5px 5px;
+      }
+      #video
+      {
+        color: white;
+        font-style: italic;
+      }
+      .listofvideo li {
+        color: white;
+      }
+      .listofvideo li a{
+        border: 2px solid black;
+        padding: 2px 2px 2px 2px;
+        color: white;
+        margin: 10px 10px 10px 10px;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li><a>home</a></li>
+          <li><a>read</a></li>
+          <li><a>about</a></li>
+          <li><a>contact us</a></li>
+          <div class="search">
+            <input
+              type="text"
+              name="mytext"
+              id="search"
+              placeholder="search for stories"
+            />
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <strong class="heading1">WE INSPIRE WOMEN</strong>
+    <div class="container">
+      <h1 class="heading">Please share your success story !!!!!!</h1>
+      <hr />
+      <p class="intro">
+        Your story can change someone's destiny .<br />
+        This site is created to share life stories written by<br />
+        inspirational women themselves so that it helps to motivate<br />
+        younger girls and women who lack any kind of idea ......
+      </p>
+    </div>
+    <hr />
+    <div id="form1">
+      <strong>Kindly enter your info</strong>
+      <form action="backend.php">
+        <br />
+        <div>Name : <input type="text" name="myname" /></div>
+        <br />
+        <div>Age :&nbsp;&nbsp;&nbsp; <input type="number" name="myage" /></div>
+        <br />
+        <div>Role :&nbsp;&nbsp; <input type="text" name="myrole" /></div>
+        <br />
+        <div>
+          Share your story :
+          <textarea name="mytext" cols="10" rows="2"></textarea>
+        </div>
+        <br />
+        <input type="submit" value="submit here" />
+        <input type="reset" value="reset" />
+      </form>
+    </div>
+    <h2 id="video">
+      <u>Introducing you to videos that might transform your life . </u>
+    </h2>
+    <ul type="color" class="listofvideo">
+      <li>
+       
+        <a href="https://www.youtube.com/watch?v=5DtDJABXkIo" target="_blank">
+            Best Motivational Video Ever | Every Woman Needs To See This |
+            Priyanka Chopra |</a
+        >
+      </li>
+      <br>
+      <li> <a href="https://www.youtube.com/watch?v=UjI_bspcUHA" target="_blank">Every Girl Should Know This | EMMA WATSON | MOTIVATIONAL SPEECH | </a></li> <br>
+      <li> <a href="https://www.youtube.com/watch?v=VxW5D5VPg_0" target="_blank">Michelle Obama's Best Advice For Students | How To Succeed In Life</a></li> <br>
+      <li> <a href="https://www.youtube.com/watch?v=RLTgnOuYb6o" target="_blank">Oprah Winfrey's Life Advice Will Change Your Future | One of the Best Motivational Video Ever</a></li>
+      <br>
+      <li> <a href="https://www.youtube.com/watch?v=GMWFieBGR7c" target="_blank">Oprah Winfrey Harvard Commencement speech | Harvard Commencement 2013</a></li>
+      <br>
+      <li> <a href="https://www.youtube.com/watch?v=wHGqp8lz36c" target="_blank">J.K. Rowling Speaks at Harvard Commencement</a></li>
+    </ul>
+  </body>
+</html>
